@@ -1,0 +1,8 @@
+   node_modules/
+   dist/
+   out/
+   *.vault
+   *.db
+   .env
+   *.pem
+   *.key
