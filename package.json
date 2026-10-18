@@ -1,0 +1,65 @@
+{
+  "name": "passkeytech",
+  "productName": "PasskeyTech",
+  "version": "0.3.0",
+  "description": "PasskeyTech - gestor de contraseñas de PasskeyOS",
+  "author": "Andy Studios",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win",
+    "release": "electron-builder --win --publish always"
+  },
+  "dependencies": {
+    "electron-updater": "^6.3.9"
+  },
+  "devDependencies": {
+    "electron": ">=33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.andystudios.passkeytech",
+    "productName": "PasskeyTech",
+    "artifactName": "${productName}-Setup-${version}.${ext}",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "vault.js",
+      "preload.js",
+      "index.html",
+      "renderer.js",
+      "novedades.js",
+      "icon.png",
+      "package.json",
+      "legal.js", "passkeys.js",
+      "bridge.js"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false,
+      "license": "EULA.txt"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "andysitostudio",
+        "repo": "PasskeyTech",
+        "releaseType": "release"
+      }
+    ],
+    "extraResources": [
+      {
+        "from": "extension",
+        "to": "extension"
+      }
+    ]
+  }
+}

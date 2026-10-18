@@ -1,0 +1,22 @@
+﻿ACUERDO DE LICENCIA DE USUARIO FINAL (EULA) · PasskeyTech
+Última actualización: 16 de octubre de 2026
+
+Este Acuerdo es entre tú y Andy Studios ("el Autor"). Al instalar o usar PasskeyTech aceptas sus términos.
+
+1. Licencia. El Autor te concede una licencia personal, no exclusiva, intransferible y revocable para instalar y usar el Software en tus equipos.
+
+2. Restricciones. No puedes vender, alquilar, sublicenciar ni redistribuir el Software como propio; ni quitar avisos de autoría; ni usarlo para fines ilícitos.
+
+3. Propiedad. El Software, su nombre, logo y diseño pertenecen a Andy Studios. Los componentes de terceros se rigen por sus propias licencias (ver "Licencias de Terceros").
+
+4. Tus datos. Tus credenciales te pertenecen. El Autor no tiene acceso a ellas ni licencia sobre ellas.
+
+5. Sin garantía. El Software se entrega "tal como está", sin garantías de ningún tipo en la medida que la ley lo permita.
+
+6. Limitación de responsabilidad. Se aplica lo indicado en el "Acuerdo Legal".
+
+7. Terminación. La licencia termina si incumples este Acuerdo; en ese caso debes desinstalar el Software.
+
+8. Ley aplicable. Leyes de Chile.
+
+Documentos completos (Terminos, Privacidad, Seguridad y mas): en la app, Ajustes > Documentos legales.

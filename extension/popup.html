@@ -1,0 +1,39 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>PasskeyTech</title>
+<style>
+:root{--ac:#6fd3ff}*{box-sizing:border-box}
+body{width:300px;margin:0;padding:18px;color:#f2f7ff;font:14px Segoe UI,sans-serif;background:#08121f;overflow:hidden;position:relative}
+.bg i{position:absolute;border-radius:50%;filter:blur(42px);opacity:.85;animation:f 9s ease-in-out infinite alternate}
+.bg i:nth-child(1){width:180px;height:180px;left:-50px;top:-60px;background:#1e3a8a}
+.bg i:nth-child(2){width:160px;height:160px;right:-60px;top:70px;background:#0e7490;animation-delay:-4s}
+.bg i:nth-child(3){width:150px;height:150px;left:40px;bottom:-70px;background:#7c3aed;animation-delay:-7s}
+@keyframes f{to{transform:translate(24px,18px) scale(1.2)}}
+.g{position:relative;padding:18px;border-radius:22px;border:1px solid rgba(255,255,255,.3);background:linear-gradient(135deg,rgba(255,255,255,.18),rgba(255,255,255,.04));backdrop-filter:blur(20px) saturate(190%);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 14px 34px rgba(0,0,0,.4);animation:p .5s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes p{from{opacity:0;transform:translateY(12px) scale(.95)}}
+.logo{width:54px;margin:0 auto 8px;display:block;animation:b 3.5s ease-in-out infinite alternate;filter:drop-shadow(0 8px 14px rgba(80,140,255,.5))}
+@keyframes b{to{transform:translateY(-5px) rotate(-3deg)}}
+h1{font-size:19px;text-align:center;margin:0 0 4px}
+p{color:#b8c9d9;margin:0 0 12px;text-align:center}
+input,button{width:100%;padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.28);color:inherit;font:inherit;margin-bottom:9px;outline:0}
+input{text-align:center;letter-spacing:.2em;font-weight:700}
+input:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(111,211,255,.35)}
+button{background:rgba(255,255,255,.12);cursor:pointer;transition:transform .15s,background .2s}
+button:hover{background:rgba(255,255,255,.22);transform:translateY(-2px)}button:active{transform:scale(.96)}
+button.m{background:var(--ac);color:#08121f;font-weight:700;border:0}
+#m{color:#ff9a9a;min-height:18px;margin:0}
+.pill{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:12px}
+.pill i{width:10px;height:10px;border-radius:50%;background:#888;animation:pu 1.6s infinite}
+.pill.ok i{background:#6ee7a8}.pill.lock i{background:#ffc857}.pill.off i{background:#ff8a7a}
+@keyframes pu{0%{box-shadow:0 0 0 0 rgba(255,255,255,.55)}100%{box-shadow:0 0 0 8px transparent}}
+.g.sk{animation:s .38s}@keyframes s{20%,60%{transform:translateX(-7px)}40%,80%{transform:translateX(7px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+<div class="bg"><i></i><i></i><i></i></div>
+<div class="g">
+<svg class="logo" viewBox="0 0 64 64"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7ee0ff"/><stop offset="1" stop-color="#6a7bff"/></linearGradient></defs><rect width="64" height="64" rx="18" fill="url(#lg)"/><circle cx="32" cy="26" r="10" fill="#fff"/><path d="M28 33h8l3 17H25z" fill="#fff"/><circle cx="32" cy="26" r="4" fill="#4a6bff"/></svg>
+<h1>PasskeyTech</h1>
+<div id="u"><p>En la app: Ajustes › Extensión de Edge › Vincular. Escribe aquí el código.</p><input id="c" placeholder="XXXX-XXXX" maxlength="9" autocomplete="off"><button class="m" id="go">Vincular</button><p id="m"></p></div>
+<div id="v" hidden><div class="pill" id="pill"><i></i><span id="s"></span></div><button id="un">Desvincular esta extensión</button></div>
+</div>
+<script src="popup.js"></script>

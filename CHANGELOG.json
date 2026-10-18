@@ -1,0 +1,5 @@
+{
+  "0.1.0": ["Primera versión: bóveda cifrada, PIN y generador de claves."],
+  "0.2.0": ["Logo y estilo Liquid Glass con animaciones.", "Importar y exportar contraseñas (CSV y .pkx cifrado).", "Ajustes de color, fondo y bloqueo automático."],
+  "0.3.0": ["Autenticador integrado: guarda la clave 2FA de cada cuenta y mira el código de 6 dígitos en vivo.", "Botón Actualizar PasskeyOS dentro de la app: eliges la versión y se instala sola.", "Pantalla de novedades después de actualizar.", "Más personalización: tu nombre, tamaño del texto y redondeo de las ventanas."]
+}

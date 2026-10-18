@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "PasskeyTech",
+  "version": "0.1.0",
+  "description": "Rellena y guarda contraseñas con la app PasskeyTech (PasskeyOS).",
+  "permissions": ["storage"],
+  "content_security_policy": { "extension_pages": "script-src 'self'; object-src 'self'" },
+  "host_permissions": ["http://127.0.0.1:47831/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{ "matches": ["http://*/*", "https://*/*"], "js": ["content.js"], "run_at": "document_idle" }],
+  "action": { "default_popup": "popup.html", "default_title": "PasskeyTech" }
+}
